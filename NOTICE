@@ -1,0 +1,29 @@
+НЕЙРОНОВО · Говорящие головы (neuronovo-talkinghead)
+Copyright 2026 НЕЙРОНОВО — https://нейроново.рф
+
+Это приложение является обёрткой (Gradio-интерфейс на русском языке) над движком
+синтеза говорящих голов Ditto и распространяется под лицензией Apache License 2.0
+(см. файл LICENSE).
+
+Сторонние компоненты
+--------------------
+
+- Ditto Talking Head — движок инференса
+    Код:  https://github.com/antgroup/ditto-talkinghead  (Apache License 2.0, © Ant Group)
+    Веса: https://huggingface.co/digital-avatar/ditto-talkinghead
+    Файл ditto/inference_neuronovo.py является производным от inference.py этого
+    репозитория (тонкая обёртка для передачи setup_kwargs через JSON).
+    Код и веса НЕ включены в этот репозиторий и скачиваются скриптом download_models.py.
+
+- Gradio — https://github.com/gradio-app/gradio  (Apache License 2.0)
+- PyTorch — https://github.com/pytorch/pytorch  (BSD-style License)
+- MediaPipe — https://github.com/google-ai-edge/mediapipe  (Apache License 2.0)
+- ONNX Runtime — https://github.com/microsoft/onnxruntime  (MIT License)
+- librosa, scikit-image, scikit-learn, OpenCV, imageio и др. — см. их лицензии.
+
+Ответственность
+---------------
+Программное обеспечение предоставляется «как есть» (AS IS) без каких-либо гарантий.
+Создание видео с лицом и голосом реального человека без его согласия может нарушать
+законодательство (право на изображение и голос, защита персональных данных).
+Ответственность за используемые материалы и соблюдение лицензий моделей лежит на пользователе.

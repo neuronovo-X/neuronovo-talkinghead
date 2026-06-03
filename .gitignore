@@ -1,0 +1,29 @@
+# Окружение
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Скачиваемый движок и веса (получаются через download_models.py)
+/ditto/
+hf_cache/
+torch_cache/
+
+# Рантайм
+settings.json
+ditto_setup_runtime.json
+tmp/
+*.log
+
+# ОС / IDE / агент
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.claude/
+
+# Архивы релизов
+*.rar
+*.zip
+*.7z
