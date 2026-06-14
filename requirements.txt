@@ -4,10 +4,10 @@
 #   pip install torch==2.5.1 torchaudio==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu121
 # См. install.bat / install.sh.
 #
-# pyximport (внутри Ditto) компилирует .pyx при первом запуске — нужен Cython и C-компилятор
+# pyximport (внутри Ditto) компилирует .pyx при первом запуске — нужен Python и C-компилятор
 # (Windows: «Build Tools for Visual Studio»; Linux: gcc/g++; macOS: Xcode Command Line Tools).
 
-gradio>=4.44,<6
+gradio>=6
 huggingface_hub>=0.25
 
 numpy>=1.26,<2.1

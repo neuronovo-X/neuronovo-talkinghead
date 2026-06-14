@@ -373,7 +373,11 @@ theme = gr.themes.Base(
     secondary_hue=gr.themes.colors.violet,
     neutral_hue=gr.themes.colors.slate,
     # Без Google Fonts: иначе при блокировке fonts.googleapis.com интерфейс зависает на «Загрузка…».
-    font=("Segoe UI", "system-ui", "sans-serif"),
+    font=(
+        gr.themes.Font("Segoe UI"),
+        gr.themes.Font("system-ui"),
+        gr.themes.Font("sans-serif"),
+    ),
 )
 
 
