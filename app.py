@@ -538,4 +538,5 @@ if __name__ == "__main__":
         css=CSS,
         head=_head,
         allowed_paths=_allowed,
+        analytics_enabled=False,
     )
