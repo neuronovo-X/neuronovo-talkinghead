@@ -40,7 +40,7 @@ def _default_settings() -> dict:
     return {
         "mask_ratio_w": 0.9,
         "mask_ratio_h": 0.9,
-        "crop_scale": 2.3,
+        "crop_scale": 2.0,
         "crop_vx_ratio": 0.0,
         "crop_vy_ratio": -0.125,
         "crop_flag_do_rot": True,
